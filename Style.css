@@ -1,0 +1,162 @@
+/* Réinitialisation de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fond léger */
+    color: #333;
+}
+
+/* Style de la navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour l'en-tête */
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0b462; /* Couleur dorée pour le survol */
+}
+
+/* Section Hero (En-tête principal) */
+.hero {
+    background: url('hero_hotel.jpg') no-repeat center center/cover; /* Changer 'hero_hotel.jpg' par votre image principale */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1; /* Assure que le contenu est au-dessus de l'image de fond */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e0b462;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c9a356;
+}
+
+/* Style général des sections */
+main section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2 {
+    color: #a07a38; /* Couleur du titre de section */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+/* Galerie de chambres */
+.galerie {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
+}
+
+.chambre {
+    flex-basis: 30%; /* Pour afficher 3 chambres par ligne (environ) */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.chambre img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Section Services */
+.section-services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-services li {
+    background-color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    border-left: 5px solid #e0b462;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Formulaire de Contact */
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+.form-contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
