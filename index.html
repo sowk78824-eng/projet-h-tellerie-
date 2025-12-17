@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de Votre Hôtel - Accueil</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <div class="logo">Hôtel NomFantaisie</div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#chambres">Chambres</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Votre Oasis de Sérénité</h1>
+            <p>Découvrez le luxe et le confort au cœur de [Ville/Région].</p>
+            <a href="#chambres" class="btn">Réserver Maintenant</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="chambres" class="section-chambres">
+            <h2>Nos Chambres Élégantes</h2>
+            <div class="galerie">
+                <div class="chambre">
+                    <img src="chambre_standard.jpg" alt="Chambre Standard">
+                    <h3>Chambre Standard</h3>
+                    <p>Confortable et abordable, idéale pour un court séjour.</p>
+                </div>
+                <div class="chambre">
+                    <img src="suite_luxe.jpg" alt="Suite de Luxe">
+                    <h3>Suite de Luxe</h3>
+                    <p>Espace, élégance et vue imprenable sur la ville.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-services">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Petit-déjeuner inclus</li>
+                <li>Wi-Fi gratuit et rapide</li>
+                <li>Piscine et Spa</li>
+                <li>Service en chambre 24h/24</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <h2>Contactez-Nous</h2>
+            <form action="#" method="POST" class="form-contact">
+                <input type="text" name="nom" placeholder="Votre Nom" required>
+                <input type="email" name="email" placeholder="Votre Email" required>
+                <textarea name="message" placeholder="Votre Message ou Demande de Réservation" rows="5" required></textarea>
+                <button type="submit" class="btn">Envoyer la Demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nom de Votre Hôtel. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
